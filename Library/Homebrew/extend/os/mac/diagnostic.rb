@@ -111,7 +111,7 @@ module Homebrew
         what = if MacOS.version == :big_sur
           return if ENV["HOMEBREW_GITHUB_ACTIONS_BIG_SUR_TESTING"]
 
-          "released but not yet supported version"
+          "released but not yet supported version, however we are working on support. :)"
         elsif OS::Mac.prerelease?
           "pre-release version"
         elsif OS::Mac.outdated_release?
